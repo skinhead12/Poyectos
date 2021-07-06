@@ -1,0 +1,92 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: black;
+  background: no-repeat url("hacking3.png");
+  background-size: cover;
+  color: white;
+}
+
+a {
+  position: absolute;
+  top: 280px;
+  left: 320px;
+}
+
+label {
+  position: absolute;
+  top: 200px;
+  left: 690px;
+}
+
+#boxOne {
+  border-radius: 2%;
+  font-family: monospace;
+  font-size: 25px;
+  color: azure;
+  width: 350px;
+  height: 100px;
+  border-color: white;
+  background-color: rgb(42, 60, 68);
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+#boxTwo {
+  border-radius: 2%;
+  font-family: monospace;
+  font-size: 25px;
+  color: azure;
+  width: 350px;
+  height: 100px;
+  border-color: white;
+  background-color: rgb(42, 60, 68);
+  position: absolute;
+  top: 300px;
+  right: 300px;
+}
+
+#BoxN {
+  position: absolute;
+  top: 200px;
+  left: 830px;
+  width: 30px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#btnCodifica {
+  position: absolute;
+  top: 550px;
+  left: 650px;
+  height: 50px;
+  width: 100px;
+}
+
+#btnBorrar {
+  position: absolute;
+  top: 550px;
+  left: 750px;
+  height: 50px;
+  width: 100px;
+}
+
+#btnDecodifica {
+  position: absolute;
+  top: 550px;
+  left: 850px;
+  height: 50px;
+  width: 100px;
+}
+
+#btnInstructions {
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  height: 50px;
+  width: 100px;
+}
