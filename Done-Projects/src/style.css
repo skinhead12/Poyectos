@@ -1,91 +1,116 @@
 h1 {
+  color: #c0e218;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
-  color: white;
 }
 
 body {
-  background-color: black;
-  background: no-repeat url("hacking3.png");
+  background: no-repeat url("fondo-kali.png");
   background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 
 a {
+  font-family: "Press Start 2P", cursive;
+  color: #c0e218;
+  font-size: 15px;
   position: absolute;
-  top: 280px;
-  left: 320px;
+  top: 223px;
+  left: 368px;
 }
 
 label {
+  font-family: "Press Start 2P", cursive;
+  color: #c0e218;
+  font-size: 15px;
   position: absolute;
-  top: 200px;
-  left: 690px;
+  top: 182px;
+  left: 688px;
 }
 
 #boxOne {
-  border-radius: 2%;
+  border-radius: 5%;
   font-family: monospace;
-  font-size: 25px;
+  font-size: 22px;
   color: azure;
   width: 350px;
-  height: 100px;
+  height: 250px;
   border-color: white;
-  background-color: rgb(42, 60, 68);
+  background-color: #393e46;
   position: absolute;
-  top: 300px;
-  left: 300px;
+  top: 250px;
+  left: 340px;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
 }
 
 #boxTwo {
-  border-radius: 2%;
+  border-radius: 5%;
   font-family: monospace;
-  font-size: 25px;
+  font-size: 22px;
   color: azure;
-  width: 350px;
-  height: 100px;
+  width: 450px;
+  height: 350px;
   border-color: white;
-  background-color: rgb(42, 60, 68);
+  background-color: #393e46;
   position: absolute;
-  top: 300px;
-  right: 300px;
+  top: 250px;
+  right: 340px;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
 }
 
 #BoxN {
   position: absolute;
-  top: 200px;
+  top: 180px;
   left: 830px;
   width: 30px;
   height: 20px;
   font-size: 20px;
+  font-family: monospace;
+  color: azure;
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+  background-color: #393e46;
+  border-color: white;
 }
 
 #btnCodifica {
+  background-color: #a3de83;
+  border-radius: 7px;
   position: absolute;
   top: 550px;
-  left: 650px;
-  height: 50px;
-  width: 100px;
+  left: 380px;
+  height: 40px;
+  width: 90px;
 }
 
 #btnBorrar {
+  background-color: #a3de83;
+  border-radius: 7px;
   position: absolute;
   top: 550px;
-  left: 750px;
-  height: 50px;
-  width: 100px;
+  left: 480px;
+  height: 40px;
+  width: 90px;
 }
 
 #btnDecodifica {
+  background-color: #a3de83;
+  border-radius: 7px;
   position: absolute;
   top: 550px;
-  left: 850px;
-  height: 50px;
-  width: 100px;
+  left: 580px;
+  height: 40px;
+  width: 90px;
 }
 
 #btnInstructions {
+  border-radius: 7px;
+  background-color: #01c5c4;
   position: absolute;
-  top: 200px;
+  top: 180px;
   right: 500px;
   height: 50px;
   width: 100px;
