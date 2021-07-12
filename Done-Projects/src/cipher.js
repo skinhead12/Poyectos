@@ -1,7 +1,7 @@
 
 
 const cipher = {
-    code: function (texto,offset){
+    encode: function (texto,offset){
         
        
         let offsetNumber = Number(offset); // creamos un variable para colocar a offset como entero
@@ -37,12 +37,8 @@ const cipher = {
 
     alerta: function(){
         alert('Instrucciones:\nIngresa un valor numerico a N, este sera el numero de desplazamiento que usara tu codigo.\nNo dejes espacios en blanco mas que el ultimo recuadro donde imprimira el resultado.');
-    },
-
-    borrar: function(){
-      btnClear();
-
     }
+
 };
 
 export default cipher;
