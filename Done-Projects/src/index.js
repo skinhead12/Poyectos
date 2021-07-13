@@ -21,7 +21,12 @@ cipher.decode(texto2);
 const btnAlerta = document.getElementById('btnInstructions');
 btnAlerta.addEventListener('click', function(){
 cipher.alerta();    
-})
+});
 
-
+const clear = document.getElementById('btnBorrar');
+clear.addEventListener('click', function() {
+    document.getElementById('boxOne').value = '';
+    document.getElementById('BoxN').value = '';
+    document.getElementById('boxTwo').value = '';
+});
 
