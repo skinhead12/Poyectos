@@ -26,6 +26,16 @@ const cipher = {
             caja.push(mensajeCodificado);
 
 
+        } else if (codificarAscii >= 32 && codificarAscii <= 64){
+            let posicion = (codificarAscii - 32 + offsetNumber) % 33 + 32; 
+            let mensajeCodificado = (String.fromCharCode(posicion));
+            caja.push(mensajeCodificado);
+            
+        } else if (codificarAscii >= 123 && codificarAscii <= 126){
+            let posicion = (codificarAscii - 123 + offsetNumber) % 3 + 123; 
+            let mensajeCodificado = (String.fromCharCode(posicion));
+            caja.push(mensajeCodificado);
+
         } else {
             let resultadoCode = (codificarAscii + offsetNumber); // se suma el numero ascii y el desplazamiento
             let ResultadoFinal = (String.fromCharCode(resultadoCode)); // imnprimir resultado ascii a abecedario
@@ -49,17 +59,26 @@ const cipher = {
             // si el texto codificado es menor o igual a 65 y menor o igual a 90 
             if (codificarAscii >= 65 && codificarAscii <= 90){
              // creamos posicion en base a la formula cesar ((x + 65 - n) % 26 + 65) mayusculas           
-                let posicion = (codificarAscii + 65 - offsetNumber) % 26 + 65;
+                let posicion = (codificarAscii - 90 - offsetNumber) % 26 + 90;
                 let mensajeCodificado = (String.fromCharCode(posicion));
                 caja.push(mensajeCodificado);
               
         // creamos posicion en base a la formula cesar ((x + 97 - n) % 26 + 97) minusculas
             } else if   (codificarAscii >= 97 && codificarAscii <= 122){
-                let posicion = (codificarAscii + 97 - offsetNumber) % 26 + 97;
+                let posicion = (codificarAscii - 122 - offsetNumber) % 26 + 122;
                 let mensajeCodificado = (String.fromCharCode(posicion));
                 caja.push(mensajeCodificado);
                
-    
+            } else if (codificarAscii >= 32 && codificarAscii <= 64){
+                let posicion = (codificarAscii - 64 - offsetNumber) % 26 + 64;
+                let mensajeCodificado = (String.fromCharCode(posicion));
+                caja.push(mensajeCodificado);
+
+            } else if (codificarAscii >= 123 && codificarAscii <= 126){
+                let posicion = (codificarAscii - 126 - offsetNumber) % 3 + 126;
+                let mensajeCodificado = (String.fromCharCode(posicion));
+                caja.push(mensajeCodificado);
+
             } else {
                 let resultadoCode = (codificarAscii - offsetNumber); // se suma el numero ascii y el desplazamiento
                 let ResultadoFinal = (String.fromCharCode(resultadoCode)); // imnprimir resultado ascii a abecedario
