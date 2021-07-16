@@ -5,10 +5,11 @@ const btnDecifrar = document.getElementById('btnDecodifica'); // boton decodific
 const btnAlerta = document.getElementById('btnInstructions'); // boton instrucciones
 const clear = document.getElementById('btnBorrar'); // boton borrar 
 
+
   // evento boton cifrar
-btnCifrar.addEventListener ('click', function(){    
+btnCifrar.addEventListener ('click', function(){
 const texto = document.getElementById('boxOne').value; // tomar valores de boxone para codificar
-const offset = document.getElementById('BoxN').value;  // tomar valores del BoxN rango del desplazamiento
+const offset = document.getElementById('BoxN').value;  // tomar valores del BoxN rango del desplazamiento    
 const caja = cipher.encode(texto, offset);  // creamos un arreglo 
 document.getElementById('boxTwo').value = caja.join(''); // imprimir resultado en el textarea boxTwo
     });

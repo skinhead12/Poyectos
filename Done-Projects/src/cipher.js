@@ -2,9 +2,13 @@
 
 const cipher = {
     encode: function (texto,offset){
-        
-       
+
         let offsetNumber = Number(offset); // creamos un variable para colocar a offset como entero
+
+        if (offsetNumber != '' || offsetNumber === null){
+            TypeError('debe ser valor numerico');
+        }
+
         let caja = []; // creamos un arreglo vacio para guardar los datos de texto ya codificado
         
         for (let i=0; i<texto.length ; ++i) { // se hace un for para recorrer la cadena de texto y saber la longitud
@@ -49,6 +53,11 @@ const cipher = {
     decode: function(texto,offset){
 
         let offsetNumber = Number(offset); // creamos un variable para colocar a offset como entero
+
+        if (offsetNumber != '' || offsetNumber === null){
+            TypeError('debe ser valor numerico');
+        }
+
         let caja = []; // creamos un arreglo vacio para guardar los datos de texto ya codificado
 
         for (let i=0; i<texto.length ; ++i) { // se hace un for para recorrer la cadena de texto y saber la longitud
@@ -70,7 +79,7 @@ const cipher = {
                 caja.push(mensajeCodificado);
                
             } else if (codificarAscii >= 32 && codificarAscii <= 64){
-                let posicion = (codificarAscii - 64 - offsetNumber) % 26 + 64;
+                let posicion = (codificarAscii - 64 - offsetNumber) % 33 + 64;
                 let mensajeCodificado = (String.fromCharCode(posicion));
                 caja.push(mensajeCodificado);
 
