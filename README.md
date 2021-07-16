@@ -17,6 +17,8 @@ En la herramienta trello https://trello.com/b/sAuuQ7Au/cipher se realizo la plan
 Al final del proyecto se realizon feedbacks entre compañeras para corregir detalles y mejorar proyecto, se subio el proyecto a github, usando comandos en terminal 
 a traves de visual studio code.
 
+![pantalla](https://user-images.githubusercontent.com/86309154/126014901-32b80a02-54e9-4e0c-82b8-df8113adf78a.jpg)
+
 
 
 
